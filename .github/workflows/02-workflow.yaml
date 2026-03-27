@@ -11,9 +11,9 @@ jobs:
       - name: Mensagem simples
         run: echo "Ola Mundo"
         continue-on-error: true
+
       - name: Fazendo clone e checkout no meu repositorio nessa maquina virtual
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Zippar os arquivos
-      run: zip -r arquivo.zip
-    
+        run: zip -r arquivo.zip .
